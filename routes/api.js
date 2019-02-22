@@ -4,7 +4,7 @@ var axios = require('axios')
 
 /* GET github jobs listings in Atlanta */
 router.get('/jobs', function(req, res, next) {
-  axios.get('http://jobs.github.com/positions.json?location=atlanta')
+  axios.get('http://jobs.github.com/positions.json?location=newyork')
   	.then(({data})=>{
   		res.json(data);
   	}).catch((error)=>{
